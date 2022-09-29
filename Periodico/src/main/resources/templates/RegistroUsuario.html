@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>FormUsuario</title>
+</head>
+<body>
+	<ul>
+		<h3>Formulario de usuario</h3>
+        <form th:object="${unUsuario}" th:action="@{/guardarUsuario}"	method="post">
+            <label for="Apellido">Apellido:</label>
+            <input type="text" name="Apellido" id="Apellido" required>
+            <br>
+            <label for="Nombre"> Nombre:</label>
+            <input type="text" name="Nombre" id="Nombre" required>
+            <br>
+            <label for="DNI"> DNI:</label>
+            <input type="number" name="dni" id="dni" required>
+            <br>
+            <br>
+            <input type="submit" value="Enviar" >
+            <input type="button" value="Cancelar">
+        </form>
+	</ul>
+</body>
+</html>
